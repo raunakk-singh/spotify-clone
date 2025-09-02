@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: black;
+font-family: 'Circular', 'Helvetica Neue', Arial, sans-serif;
+}
+.sidebar{
+    position: fixed;
+    width: 300px;
+    background: #030303;
+    left: 0;
+    top: 0;
+    bottom:0;
+    padding: 10px;
+}
+.sidebar-nav{
+    background-color: #111111;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    
+}
+.sidebar-nav .logo{
+    width: 150px;
+}
+.sidebar-nav .logo img{
+    width: 100%;
+}
+.sidebar-nav ul{
+    list-style: none;
+    
+}
+.sidebar-nav ul li{
+    padding: 10px 20px;
+}
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 600;
+}
+.sidebar-nav ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.library::after{
+    content: '+';
+    float: right;
+    background-color:#1f1e1e;
+    padding: 5px 10px;
+    border-radius: 50%;  
+    font-size: 15px;
+}
+.playlist{
+    color: #b3b3b3;
+    background-color: #292828;
+    padding: 20px 15px;
+    border-radius: 12px;
+    
+}
+.playlist p{
+    margin-top: 10px;
+}
+.playlist-button{
+    border: solid white;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 13px;
+    padding: 5px 15px;
+    font-weight: 600;
+    
+}
+.podcast{
+    margin-top: 20px;
+    color: #b3b3b3;
+    background-color: #292828;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.podcast p{
+     margin-top: 10px;
+}
+.sidebar-scroll{
+    height: 120px;
+    overflow-y: auto;
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 5px;
+    }
+
+.privacy ul li a{
+    text-decoration: none;
+    color: #5c5b5b;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0 4px;
+    
+}
+.privacy{
+    padding: 0px 10px;
+    margin-top: 20px;
+}
+.privacy ul li{
+    margin-top: 15px;
+}
+.language{
+    color: whitesmoke;
+    background-color: black;
+    font-size:12px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 8px 8px;
+ border: white 2px solid;
+ border-radius: 25px;
+}
+/* Main section starts here */
+.main-section{
+    margin-left: 300px;
+    background: #181818;
+
+}
+.main-section .top-nav{
+    padding: 10px 30px;
+    background: #0303034f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.main-section .top-nav button{
+    background-color: transparent;
+    border: 0;
+}
+.main-section .top-nav .prev-btn button i{
+    color: #838181;
+    font-size: 22px;
+    margin-right: 10px;
+}
+.top-nav .rgstr-btn .sign:hover{
+    color:#ffff;
+}
+.top-nav .rgstr-btn .sign{
+    color: #838181;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.top-nav .rgstr-btn .login{
+    background: white;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 6px 10px;
+
+    
+}
+.Spotify-playlist{
+    padding: 20px 40px;
+    
+}
+.Spotify-playlist h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.Spotify-playlist .card{
+    display: flex;
+    gap:20px;
+    overflow: hidden;
+
+}
+.Spotify-playlist .card .item{
+    min-width: 140px;
+    width: 190px;
+    background-color: #272626;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 15px;
+}
+.Spotify-playlist .card .item:hover{
+    background-color: #5c5b5b;
+    margin-left: 7px; 
+    border-radius: 7px;
+    
+}
+
+.Spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.Spotify-playlist .item h4{
+    color: white;
+}
+.Spotify-playlist .item p{
+    color:  #817c7c;
+    font-size: 13px;
+    margin-top:10px ;
+
+}
+.Spotify-playlist .item p:hover{
+    text-decoration: underline;
+}
+.Spotify-playlist .item h4:hover{
+    text-decoration: underline;
+}
+.Spotify-playlist .item {
+    position: relative;
+    /* Keep this to allow absolute positioning inside */
+}
+
+.Spotify-playlist .item .play-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 90px;
+    background-color: #1db954;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Spotify-playlist .item:hover .play-btn {
+    opacity: 1;
+}
+
+
+
+
+
